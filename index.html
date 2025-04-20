@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image Analysis System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/styles.css" />
+    <script language="javascript" type="text/javascript" src="script/mootools-1.2.1-core.js"></script>
+    <script language="javascript" type="text/javascript" src="script/mootools-1.2-more.js"></script>
+    <script language="javascript" type="text/javascript" src="script/slideitmoo-1.1.js"></script>
+    <script language="javascript" type="text/javascript">
+        window.addEvents({
+            'domready': function () {
+                new SlideItMoo({
+                    overallContainer: 'SlideItMoo_outer',
+                    elementScrolled: 'SlideItMoo_inner',
+                    thumbsContainer: 'SlideItMoo_items',
+                    itemsVisible: 5,
+                    elemsSlide: 2,
+                    duration: 150,
+                    itemsSelector: '.SlideItMoo_element',
+                    itemWidth: 158,
+                    showControls: 1
+                });
+            }
+        });
+    </script>
+    <script language="javascript" type="text/javascript">
+        function clearText(field) {
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.7em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            color: #000000;
+            background: #ffffff;
+        }
+        
+        /* Button styles */
+        .button-container {
+            display: flex; /* Use flexbox for alignment */
+            justify-content: center; /* Center the buttons */
+            gap: 15px; /* Adjust spacing between buttons */
+            margin-top: 20px; /* Margin above buttons */
+        }
+
+        .button a {
+    display: block;
+    width: 150px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    padding: 10px 0; /* Add padding for better visibility */
+    color: #ffffff; /* Set text color to white */
+    font-size: 14px; /* Increase font size for better visibility */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background: url(images/button_01.jpg) no-repeat; /* Use the correct PNG */
+    background-color: #4CAF50; /* Fallback color */
+}
+.button a:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Specific styling for the "Learn More" buttons */
+.button.learn-more a {
+    background-color: #ff0000; /* Red background for "Learn More" */
+}
+
+.button.learn-more a:hover {
+    background-color: #cc0000; /* Darker shade on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div id="site_title_bar_wrapper_outter">
+        <div id="site_title_bar_wrapper_inner">
+            <div id="site_title_bar">
+                <div id="banner_left">
+                    <div id="site_title">
+                        <h1><a href="#">Image <span>Analysis</span> <span class="tagline">System for Quality Testing</span></a></h1>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="#" class="current"><span></span>Home</a></li>
+                            <li><a href="#"><span></span>About Us</a></li>
+                            <li><a href="#"><span></span>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="banner_right">
+                  <div id="banner_box">
+                      <h1>Upload Your Images for Analysis</h1>
+                      <p>Upload your product images for automated quality analysis. Our system will assess the images and provide results based on pre-defined parameters.</p>
+                      <div class="button">
+                          <a href="https://drive.google.com/drive/folders/1QiAHzDJ55M4Wfzb00YAhsAm_S_sBpx50" target="_blank">Upload to Our System</a>
+                      </div>
+                      <div class="button">
+                          <a href="sheet.html">View Results</a>
+                      </div>
+                      <div class="button">
+                          <a href="ocr.html">View OCR</a>
+                      </div>
+                     
+                  </div>
+              </div>
+              
+    </div>
+
+    <div id="content">
+        <div class="section_w940">
+            <p class="em_text">This system is built to automate the quality analysis of product images using advanced image processing techniques. You can upload images directly into our system and view the results of the analysis which will be processed and available in real-time.</p>
+        </div>
+        <div class="cleaner_h40"></div>
+        <div class="section_w940">
+            <div id="SlideItMoo_outer">
+                <div id="SlideItMoo_inner">
+                    <div id="SlideItMoo_items">
+                        <div class="SlideItMoo_element"><a href="#"><img src="gallery/thumb/image_03.jpg" alt="" /></a></div>
+                        <div class="SlideItMoo_element"><a href="#"><img src="gallery/thumb/image_04.jpg" alt="" /></a></div>
+                        <div class="SlideItMoo_element"><a href="#"><img src="gallery/thumb/image_05.jpg" alt="" /></a></div>
+                        <div class="SlideItMoo_element"><a href="#"><img src="gallery/thumb/image_06.jpg" alt="" /></a></div>
+                        <div class="SlideItMoo_element"><a href="#"><img src="gallery/thumb/image_07.jpg" alt="" /></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cleaner_h40"></div>
+        <div class="section_w940">
+            <div class="section_w430 margin_r_80">
+                <h2>Image Upload Guidelines</h2>
+                <img class="image_wrapper fr_image" src="images/image_01.jpg" alt="" />
+                <p>Please ensure that the images are clear, well-lit, and focused. Images should be in formats like JPG or PNG. Proper edge detection and contour identification will be performed as part of the analysis process.</p>
+                <div class="cleaner_h10"></div>
+                <div class="button learn-more"><a href="#">Learn More</a></div>
+            </div>
+            <div class="section_w430">
+                <h2>About the Analysis</h2>
+                <img class="image_wrapper fr_image" src="images/image_02.jpg" alt="" />
+                <p>Our analysis system uses machine learning to assess product quality by detecting visual defects and inconsistencies. The results are based on accuracy, efficiency, and overall product condition.</p>
+                <div class="cleaner_h10"></div>
+                <div class="button learn-more"><a href="#">Learn More</a></div>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+    </div>
+
+   <div id="footer_wrapper">
+        <div id="footer">
+            <div class="section_w210 margin_r_20">
+               
+              
+            </div>
+            <div class="section_w210 margin_r_20">
+           
+               
+            </div>
+            <div class="section_w210 margin_r_20">
+            
+               
+            </div>
+            <div class="section_w210">
+            
+               
+            </div> 
+          
