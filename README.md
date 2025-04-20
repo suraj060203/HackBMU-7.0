@@ -24,7 +24,7 @@ This solution leverages advanced imaging and machine learning techniques to auto
 ## How to Use:
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Anshsingh512/Anshsingh512.github.io
+   git clone https://github.com/suraj060203/HackBMU-7.0.git
    ```
 2. **Google Colab Setup**:  
    - The core analysis code is hosted in Google Colab for efficient computation.  
